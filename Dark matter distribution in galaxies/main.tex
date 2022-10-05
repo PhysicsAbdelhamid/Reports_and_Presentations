@@ -1,0 +1,173 @@
+\documentclass[12pt, letterpaper, twocolumn]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{fontspec}
+\setmainfont{Arial}
+\usepackage{fancyhdr}
+\setlength{\headheight}{14.5pt}
+\usepackage{graphicx}
+\usepackage{caption}
+\captionsetup[figure]{font=small}
+\usepackage{amsmath}
+\usepackage{sectsty}
+\sectionfont{\large}
+\renewcommand{\thesection}{\Roman{section}} 
+\usepackage[]{siunitx}
+\usepackage[style=numeric,sorting=none]{biblatex}
+\usepackage{xcolor}
+\usepackage[colorlinks]{hyperref}
+\usepackage{hyperref}
+\hypersetup{
+    linkcolor=blue, 
+    urlcolor=red,
+    citecolor=blue,
+    pdftitle={Dark matter distribution in galaxies},
+    pdfauthor={A.Haddad},}
+\usepackage{fancybox}
+\usepackage{biblatex}
+\renewcommand*{\bibfont}{\normalfont\footnotesize}
+\addbibresource{references.bib}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{HADDAD Abdelhamid}
+\chead{\textbf{Dark matter distribution\\in galaxies}}
+\rhead{Aix-Marseille University}
+\cfoot{\thepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\pagestyle{plain}
+
+\begin{center}
+\textbf{\large{Dark matter distribution in galaxies}}\\ \textit{Haddad Abdelhamid\\Aix-Marseille University}
+\end{center}
+
+\begin{center}
+\noindent\textbf{Abstract}\\
+\textit{We will try to give in some words a brief and a concise overview on dark matter distribution around galaxies. Our aim is neigher to present a theoretical explanation of it (especially since we don't have it yet) nor an historical  reconstitution, but we will look at it in an astrophysical point of view.}
+\end{center}
+
+%**********************************************************************************
+
+\section{\textbf{Introduction}}
+One of the multiple questions physics wanna answer is "simply": \textbf{what our universe is made of ?} Surrely after a lot of works we have some fragments of answers, but there's still a lot to do. 
+\\Let's call the \textbf{universe} the set of all what exist, governed by a number of laws, it is filled with several different species of particles as shown in figure \ref{baumann}: 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.4\textwidth]{img/particles.png}
+    \caption{Representation of different constituent of the universe, taken from \cite{baumann2018}.}
+    \label{baumann}
+\end{figure}
+
+\begin{itemize}
+\item The first most common particles you may know is the electron, proton and photon, let's add to them  neutrino and everything ever observed with all of our instruments and call it \textbf{normal (or luminous\footnote{By luminous matter we mean matter that radiates, of more properly that interact with photon's.}) matter}. Sorry for disappointing you, but this known "normal matter" contitute only less than 5\% of the (observed) universe. More is unknown than is known... \cite{nasa}
+\item Dark Energy was introduced in the aim to explain the acceleration of the expanding universe\footnote{Please to consult some advanced lectures on cosmology as \cite{baumann2018} and \cite{Piattella_2018}. You may also look at Physics Nobel prize 2011.}. It turns out that roughly 68\% of the universe is dark energy, we know how much Dark Energy there is because we know how it affects the universe expansion. Other than that, it is a complete mystery !
+\item If our count is correct, then there is around 27\% of (more) unkown component in our universe ! We will try in next section to establish the logic behind the comonly called \textbf{Dark Matter}.
+\end{itemize}
+
+%**********************************************************************************
+
+\vspace{0.125in}
+
+\section{Galaxies rotation curves}
+
+For what follow, we will base our discution on \cite{Salucci_2019,susskind}, we will try to convince you more of the existence of dark matter in the classical \textbf{"Problem with galaxies rotation curves"} and see how we effectively measure the fraction of dark matter in galaxies (and universe).
+
+The most common word used along with Universe is the term of \textbf{Galaxy}. Galaxies are an assemblages of stars as shown in figure \ref{galaxy}: 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.44\textwidth]{img/M33.jpeg}
+    \caption{Triangulum Galaxy, namely the M33. Credit in \cite{m33}.}
+    \label{galaxy}
+\end{figure}
+
+It is admitted that all the informations we got from the M33 comes from it's luminous matter (by definition), with this informations we can deduce their matter content and then their mass. 
+
+Observations show also that the stars of the galaxies turn around their galactic center, according to Kepler's Laws: the velocity on circular orbit that encompasses all gravitation mass is given by: 
+
+\begin{equation}
+V(R)~=~\sqrt{\frac{GM}{R}}.
+\end{equation}  
+
+Which sould drop as $1/\sqrt{R}$. Let's plot the expected velocity versus distance from the centre of the galaxy (M33 for example), this is the so-called \textbf{rotational curve}, and compare it to observational measure in figure \ref{rotation}:
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/rotation.png}
+    \caption{The image of M33 and the corresponding rotational curve. Taken from \cite{Salucci_2019}.}
+    \label{rotation}
+\end{figure}
+
+Their clearly something wrong! What exactly does this large anomaly of the gravitational field indicate? The presence of i) a (new) non-luminous massive component around the stellar disk or ii) new physics of a (new) dark constituent? this contradiction can be expressed into three points: 
+
+\begin{enumerate}
+\item When we look at a galaxy we see most of its light coming from the central region (luminous matter).
+\item If most of the mass of the galaxy is concentrated in the centre, then we would expect that stars further from the centre would move at a slower velocity than stars closer to the centre.
+\item BUT, the velocities of observed stars far from the centre are much faster than expected.
+\end{enumerate}
+
+This suggests that there is more mass in the galaxy than what we can see. We call this mass \textbf{dark matter} since we can't see it. 
+
+\vspace{0.125in}
+\section{\textbf{The dark matter distributions}}
+
+As the star's velocities are homogeneous around the galactic center, this dark matter seems to be distributed in a sphere around the disk of the galaxy. This sphere is called the \textbf{dark halo}. 
+
+pursuing \cite{last,Piattella_2018}, we can estimate the mass of the Milky Way by using Kepler's laws of motion: 
+
+\begin{equation}
+M_0~=~\frac{rv^2}{G}
+\end{equation}
+
+Which gives the mass M interior to the orbit r of a star with velocity v. For example we find that the mass inside of the Sun's orbit in the Milky Way is $M_0~=~10^{11}M_{Sun}~=~2*10^{41}$kg. 
+
+Using $M_0$ as the bright-matter mass of the Milky Way Galaxy and M(r) as the mass of dark matter contained within a radius r from galactic center,by assuming constant orbital speed show the radial density distribution of dark matter is constant.
+
+\begin{align}
+&\frac{G[M_0+M(r)]}{r}~=~\frac{v^2}{r}\\
+&M(r)=r\frac{v^2}{G}-M_0\\
+&\frac{dM}{dr}~=~\frac{v^2}{G}~=~constant.
+\end{align}
+
+This constancy makes the volumetric density distribution of dark matter varies inversely with $r^2$. 
+
+\begin{equation}
+\rho~=~\frac{dM}{dV}~=~\frac{dM}{4 \pi r^2 dr}~\propto~\frac{1}{r^2}.
+\end{equation}
+
+We picked a numerical calculation done in \cite{last} with different cuttof-radius shown in figure \ref{radius}: 
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/radius.png}
+    \caption{Estimates of dark matter mass around the galactic center as a function of the radial cutoff in terms of $M_0$, the bright-matter mass of the Milky-Way. Taken from \cite{last}.}
+    \label{radius}
+\end{figure}
+
+The present calculations provide a lower limit for the dark matter for 100 KLy at 3.5 times the bright matter mass in the galaxy. But, dark matter may extend well beyond the bright matter of the Milky Way with constant distribution up to 240 KLy, this resulting dark matter prediction would be $10~M_0$.
+
+
+\section{\textbf{Conclusion}}
+
+The obvious question is: \textbf{what is the dark matter made of?} All the properties we enumerate here (and can be found in letterature) are deduced according to gravitational interaction. Microspically, we know much more what dark matter isn't than what it is...
+
+Possible candidates for Dark Matter can be enumerated as\footnote{You may consult more advanced lectures and books to get more details.} (taken from \cite{last})
+\begin{enumerate}
+\item \textbf{Dust and cold hydrogen clouds}, No evidence for significant amounts of dust or H in the halo. 
+\item \textbf{MAssive Compact Halo Objects}, Jupiter-like planets, white dwarfs, neutron stars and black holes. But, These MACHOs can account for approximately 10\% of the dark matter in the halo only.
+\item \textbf{WIMPs: Weakly Interacting Massive Particles}, particles which don't interact well with others. Nobody has ever detected any of these exotic particles (except for the neutrino).
+\end{enumerate}
+
+\vspace{0.125in}
+\noindent\textbf{References}
+
+\vspace{0.125in}
+\printbibliography[heading=none]
+
+%\newpage
+%\pagestyle{fancy}
+
+\end{document}

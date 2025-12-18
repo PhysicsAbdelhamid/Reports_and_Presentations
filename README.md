@@ -1,3 +1,2 @@
-# Reports and Presentations
 
 This repo contain some of my projects done in class under the supervision of my professors. Don't hesitate to contact me if you have any question and/or suggestion regarding theses works, I will be happy to help ;) Unfortunately, some of my cited works in my CV have been lost... 
